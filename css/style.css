@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Spacing-skala*/
 /*Layout*/
 /*Breakpoints*/
@@ -304,8 +305,61 @@ h1 {
 
 .hero__tagline {
   max-width: 32ch;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 0.85;
   margin-bottom: 1.5rem;
+}
+
+/*Knapper */
+.btn, .btn-ghost, .btn-primary {
+  display: inline-block;
+  font-family: "Alata", Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 0.65em 1.8em;
+  border-radius: 999px;
+  border: 2px solid #cdb2ea;
+  background: #ffffff;
+  color: #2b2440;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.btn:hover, .btn-ghost:hover, .btn-primary:hover, .btn:focus-visible, .btn-ghost:focus-visible, .btn-primary:focus-visible {
+  background: #cdb2ea;
+}
+.btn:active, .btn-ghost:active, .btn-primary:active {
+  transform: scale(0.97);
+}
+
+.btn--center {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1.5rem auto 0;
+}
+
+/* Bruges oven på mørk baggrund */
+.btn--outline-light {
+  border-color: #de38ff;
+  background: transparent;
+  color: #f4eefc;
+}
+.btn--outline-light:hover, .btn--outline-light:focus-visible {
+  background: #de38ff;
+  color: #ffffff;
+}
+
+.btn-ghost {
+  margin-top: 50px;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn-ghost:hover, .btn-ghost:focus-visible {
+  background-color: #ffffff;
+  color: #de38ff;
 }
 
 /* Om mig */
