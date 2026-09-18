@@ -105,7 +105,7 @@ textarea:focus-visible {
 }
 
 .section--light {
-  background: #e7d9f4;
+  background: #f6f8fc;
 }
 
 .section--dark {
@@ -275,7 +275,7 @@ h1 {
   position: relative;
   min-height: 60vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
   color: #f4eefc;
 }
@@ -314,6 +314,8 @@ h1 {
   display: grid;
   gap: 1.5rem;
   text-align: center;
+  color: white;
+  background-color: #1a181b;
 }
 @media (min-width: 700px) {
   .about {

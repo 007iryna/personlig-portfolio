@@ -23,7 +23,7 @@ h1 {
   position: relative;
   min-height: 60vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
   color: $color-text-on-dark;
 }
@@ -66,6 +66,8 @@ h1 {
   display: grid;
   gap: $space-3;
   text-align: center;
+  color: white;
+  background-color: $color-dark;
 
   @include respond($bp-tablet) {
     grid-template-columns: 1fr 1fr;
