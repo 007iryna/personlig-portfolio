@@ -16,7 +16,7 @@ html {
 body {
   width: 100%;
   background-color: #f6f8fc;
-  font-family: "Lato", "Segoe UI", sans-serif;
+  font-family: "Alata", "Segoe UI", sans-serif;
   line-height: 1.6;
   color: #2b2440;
   overflow-x: hidden;
@@ -35,7 +35,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Alata", Georgia, serif;
   font-weight: 500;
   line-height: 1.15;
   margin: 0 0 1.5rem;
@@ -166,7 +166,7 @@ textarea:focus-visible {
   font-size: 1.6rem;
   letter-spacing: 0.06em;
   margin: 0 0 0.15rem;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Alata", Georgia, serif;
   font-weight: 500;
   text-align: left;
 }
@@ -406,7 +406,7 @@ h1 {
 }
 
 .slider__title {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Alata", Georgia, serif;
   font-weight: 600;
   font-size: 1.2rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -469,7 +469,7 @@ h1 {
 }
 
 .contact-form__field {
-  font-family: "Lato", "Segoe UI", sans-serif;
+  font-family: "Alata", "Segoe UI", sans-serif;
   font-size: 0.95rem;
   padding: 0.75em 1em;
   border: 1px solid rgba(43, 36, 64, 0.2);
