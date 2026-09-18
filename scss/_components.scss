@@ -210,6 +210,48 @@ h1 {
   }
 }
 
+/* Kontaktformular */
+
+
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto;
+  background: $color-white;
+  border-radius: $radius-md;
+  padding: $space-3;
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  box-shadow: 0 12px 30px rgba($color-dark, 0.1);
+}
+
+.contact-form__field {
+  font-family: $font-body;
+  font-size: 0.95rem;
+  padding: 0.75em 1em;
+  border: 1px solid rgba($color-text, 0.2);
+  border-radius: $radius-md;
+  background: $color-lavender;
+
+  &::placeholder {
+    color: rgba($color-text, 0.55);
+  }
+}
+
+.contact-form__field--textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.contact-form__status {
+  margin: 0;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+
+  &[data-state="success"] { color: #1a7a3d; }
+  &[data-state="error"] { color: #b3261e; }
+}
+
 /* Footer */
 
 
