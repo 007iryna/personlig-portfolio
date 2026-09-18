@@ -90,6 +90,59 @@
         </div>
       </div>
     </section>
+
+     <!-- ============ PROJEKTER / SLIDER ============ -->
+    <section class="section section--dark" id="projekter">
+      <h2 class="section__heading section__heading--on-dark">Projekter</h2>
+
+      <div class="slider" id="projectSlider" aria-roledescription="karrusel" aria-label="Projekter">
+        <ul class="slider__track">
+          <li class="slider__slide is-active" style="--slide-bg: linear-gradient(135deg,#0e7c86,#0a4f57);">
+            <a href="#" class="slider__link">
+              <span class="slider__title">Case 1</span>
+            </a>
+          </li>
+          <li class="slider__slide" style="--slide-bg: linear-gradient(135deg,#c23b6d,#7a1f45);">
+            <a href="#" class="slider__link">
+              <span class="slider__title">Case 2</span>
+            </a>
+          </li>
+          <li class="slider__slide" style="--slide-bg: linear-gradient(135deg,#e08a2b,#8a4a10);">
+            <a href="#" class="slider__link">
+              <span class="slider__title">Case 3 </span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="slider__nav slider__nav--prev" aria-label="Forrige projekt">‹</button>
+        <button class="slider__nav slider__nav--next" aria-label="Næste projekt">›</button>
+
+        <div class="slider__dots" role="tablist" aria-label="Vælg projekt"></div>
+      </div>
+
+      <a href="#kontakt" class="btn btn--pill btn--center btn--outline-light">Læs mere</a>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="section section--light" id="kontakt">
+      <h2 class="section__heading">Kontakt</h2>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <label class="visually-hidden" for="cf-name">Navn</label>
+        <input class="contact-form__field" type="text" id="cf-name" name="name" placeholder="Navn" required>
+
+        <label class="visually-hidden" for="cf-email">Email</label>
+        <input class="contact-form__field" type="email" id="cf-email" name="email" placeholder="Email" required>
+
+        <label class="visually-hidden" for="cf-message">Besked</label>
+        <textarea class="contact-form__field contact-form__field--textarea" id="cf-message" name="message" rows="5" placeholder="Besked" required></textarea>
+
+        <p class="contact-form__status" id="contactFormStatus" role="status" aria-live="polite"></p>
+
+        <button type="submit" class="btn btn--pill btn--center">Send</button>
+      </form>
+    </section>
+
    
   </main>
 
