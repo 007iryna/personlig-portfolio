@@ -68,6 +68,7 @@ h1 {
   text-align: center;
   color: white;
   background-color: $color-dark;
+  border-radius: $radius-md;
 
   @include respond($bp-tablet) {
     grid-template-columns: 1fr 1fr;
