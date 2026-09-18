@@ -1,0 +1,42 @@
+
+$font-primary: 'Playfair Display', Georgia, serif;
+$font-heading: $font-primary;
+$font-body:    'Lato', 'Segoe UI', sans-serif;
+
+$color-bg:   #f6f8fc;
+
+
+$color-text: #2b2440;
+
+$container-width: 1200px;
+
+$color-lavender:       #e7d9f4;
+$color-lavender-deep:  #cdb2ea;
+$color-dark:           #1a181b;
+$color-dark-alt:       #1f132b;
+$color-accent:         #de38ff;
+$color-white:          #ffffff;
+$color-text-on-dark:   #f4eefc;
+$color-muted:          #8a8398;
+
+/*Spacing-skala*/
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 1.5rem;
+$space-4: 2.5rem;
+$space-5: 4rem;
+
+/*Layout*/
+$max-width: 1100px;
+$radius-pill: 999px;
+$radius-md: 12px;
+
+/*Breakpoints*/
+$bp-tablet: 700px;
+$bp-desktop: 1024px;
+
+@mixin respond($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

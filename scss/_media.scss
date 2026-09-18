@@ -1,0 +1,73 @@
+@use "partial" as *;
+
+/* ====== 900px ====== */
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: $color-white;
+    padding: 2rem 0;
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+    transition: 0.3s ease;
+
+    &.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    a {
+      font-size: 1.1rem;
+      color: $color-text;
+    }
+  }
+
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn-primary,
+  .btn-ghost {
+    max-width: 80%;
+  }
+
+  .site-header {
+    height: auto;
+    min-height: 100px;
+    padding: 1rem 0;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .container .header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

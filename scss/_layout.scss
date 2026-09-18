@@ -1,0 +1,144 @@
+@use "partial" as *;
+
+.site-header {
+  position: relative;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  color: $color-white;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(5, 26, 46, 0.15);
+}
+
+.header-bg {
+  position: absolute;
+  inset: 0;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.header-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+
+/*Logo*/
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  align-items: flex-start;
+  text-align: left;
+  color: $color-text;
+}
+
+.logo-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.15rem;
+  font-family: $font-primary;
+  font-weight: 500;
+  text-align: left;
+}
+
+.logo-subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  margin: 0;
+  text-align: left;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.logo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Navigation */
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    font-size: 1rem;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.6;
+    }
+  }
+
+  a[aria-current="page"] {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+/* Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+
+  span {
+    width: 28px;
+    height: 3px;
+    background-color: $color-text;
+    transition: 0.3s ease;
+  }
+
+  &.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

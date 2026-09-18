@@ -1,0 +1,15 @@
+@use "partial" as *;
+
+
+
+
+
+/* Footer */
+
+
+.site-footer {
+  text-align: center;
+  padding: $space-3;
+  font-size: 0.8rem;
+  color: rgba($color-text, 0.6);
+}
