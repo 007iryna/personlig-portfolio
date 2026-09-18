@@ -57,6 +57,29 @@ h1 {
 }
 
 
+/* Om mig */
+
+
+.about {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: grid;
+  gap: $space-3;
+  text-align: center;
+
+  @include respond($bp-tablet) {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: center;
+    gap: $space-4;
+  }
+}
+
+.about__image img {
+  border-radius: $radius-md;
+  margin: 0 auto;
+}
+
 
 /* Footer */
 
