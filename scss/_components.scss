@@ -81,6 +81,135 @@ h1 {
 }
 
 
+/* Kompetencer */
+
+
+.skills-card {
+  max-width: 420px;
+  margin: 0 auto;
+  background: $color-white;
+  border-radius: $radius-md;
+  padding: $space-3;
+  box-shadow: 0 12px 30px rgba($color-dark, 0.12);
+}
+
+.skills-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-3;
+}
+
+.skills-grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: $color-text;
+
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+
+/* Projekt-slider */
+
+
+.slider {
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto $space-3;
+  border-radius: $radius-md;
+  overflow: hidden;
+}
+
+.slider__track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 240px;
+
+  @include respond($bp-tablet) {
+    height: 360px;
+  }
+}
+
+.slider__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+  background: var(--slide-bg, #333);
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.slider__link {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding: $space-3;
+  text-decoration: none;
+  color: $color-white;
+}
+
+.slider__title {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.slider__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba($color-white, 0.85);
+  border: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+
+  &--prev { left: $space-2; }
+  &--next { right: $space-2; }
+
+  &:hover { background: $color-white; }
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: $space-2 0 0;
+}
+
+.slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba($color-text-on-dark, 0.35);
+  cursor: pointer;
+  padding: 0;
+
+  &.is-active {
+    background: $color-accent;
+  }
+}
+
 /* Footer */
 
 
